@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListner</title>
+</head>
+<style>
+    .container {
+        height: 250px;
+        width: 100%;
+        padding: 34px;
+        margin: 12px 13px;
+
+        background-color: antiquewhite;
+    }
+
+    .parent {
+        height: 150px;
+        width: 80%;
+        padding: 34px;
+        margin: 12px 13px;
+        background-color: rgb(171, 108, 31);
+
+    }
+
+    .child {
+        height: 50px;
+        width: 70%;
+        padding: 34px;
+        margin: 12px 13px;
+
+        background-color: rgb(203, 132, 132);
+        border: 2px solid wheat;
+        text-align: center;
+    }
+
+    .child button {
+        border: 2px solid rgb(209, 202, 202);
+        width: 20%;
+        margin: auto;
+        background-color: rgb(125, 164, 164);
+        cursor: pointer;
+        border-radius: 12px;
+        padding: 5px 15px;
+    }
+</style>
+
+<body>
+    <div class="container" id="co">
+        <div class="parent">
+            <div class="child">
+                <button>Change color</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function generate_random_color() {
+            let r1 = Math.floor((Math.random() * 255) + 1);
+            let r2 = Math.floor((0 + Math.random() * 255) + 1);
+            let r3 = Math.floor((0 + Math.random() * 255) + 1);
+            console.log(r1)
+            let color = `rgb(${r1},${r2},${r3})`
+            return color
+        }
+        let a ;
+        let btn = document.querySelector("button")
+        btn.addEventListener("click", (e) => {
+
+          a = setInterval(() => {
+                let bg = document.querySelector(".parent")
+                bg.style.background = generate_random_color();
+
+                let cont = document.getElementById("co")
+
+                cont.style.background =
+                    generate_random_color();
+                //  alert("Background color has been changed");
+                
+            },1000)
+
+        }) 
+        
+        btn.addEventListener("dblclick",()=>{
+            clearInterval(1);
+            console.log(a)
+            
+            
+            
+        })
+    </script>
+</body>
+
+</html>

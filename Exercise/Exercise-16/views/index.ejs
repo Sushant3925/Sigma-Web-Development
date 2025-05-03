@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-16</title>
+</head>
+<style>
+    .button {
+        text-align: center;
+        background-color: antiquewhite;
+    }
+</style>
+
+<body>
+    <div class="button">
+        <input id="createdb" type="button" value="createdb">
+        <input id="cleardb" type="button" value="cleardb">
+    </div>
+
+    <script>
+        document.getElementById("createdb").addEventListener(("click"), async (e) => {
+            console.log("yes")
+            let a = await fetch("/generate")
+            // let b = await a.json()
+        })
+    </script>
+</body>
+
+</html>

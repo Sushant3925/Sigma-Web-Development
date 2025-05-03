@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-9</title>
+</head>
+<body>
+    <script>
+        let r = Math.random();
+        // let r = 0;
+        let a = prompt("Enter the number: ");
+        let o = prompt("Enter the operator");
+        let b = prompt("Enter the number: ");
+        console.log(r);
+        
+        let ob ={
+            "+" : "-",
+            "*" : "+",
+            "-" : "/",
+            "/" : "**"
+        }
+
+        if(r > 0.1)
+        {
+            alert(`The result is ${eval(`${a} ${o}${b}`)}`);
+        }
+        else{
+            o = ob[o];
+            console.log(o);
+            alert(`The result is ${eval(`${a} ${o}${b}`)}`);
+        }
+    </script>
+</body>
+</html>

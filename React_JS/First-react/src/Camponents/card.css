@@ -1,0 +1,9 @@
+.card1{
+    border: 2px solid gray;
+    width: 14vw;
+    height: 300px;
+    margin: 34px;
+}
+.card2{
+    overflow: hidden;
+}

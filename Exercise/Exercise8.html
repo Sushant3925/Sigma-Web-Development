@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-8</title>
+
+    <style>
+
+        .ball{
+            height: 100px;
+            width: 100px;
+            background-color: cadetblue;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 65px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        
+            animation: animateX 3s linear 1s infinite,
+            animateY 2s ease-out infinite alternate;
+        }
+        .container{
+            height:  700px;
+            width: 100%;
+            position: relative;
+            background-color: blanchedalmond;
+            
+        }
+        
+        @keyframes animateX {
+            from
+            {
+                left :0 ;       
+            }
+            to{
+                    left:100%;
+            }
+        }
+        @keyframes animateY {
+            from
+            {
+                bottom :0 ;       
+            }
+            to{
+                    bottom:90%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="ball translate">
+                    ball
+            </div>
+        </div>
+</body>
+</html>

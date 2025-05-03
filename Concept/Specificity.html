@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity of a selector</title>
+    <style>
+        /* The specificity of this selector is 1  */
+
+        p {
+            color: rgb(122, 72, 6);
+            font-size: 1.5rem;
+
+        }
+
+        /* The specificity of this selector is 10  */
+
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 1 + 10 = 11  */
+        p.yellow {
+            color: rgba(93, 114, 8, 0.917);
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        [data-x=a] {
+            color: rgb(130, 45, 45);
+        }
+        a.harryclass.rohan-class[href]:hover {
+            color: rgb(201, 53, 53);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="yellow cred purple" data-x="a">
+            <a href="www.google.com" class="harryclass rohan-class">this is a href</a><br>
+            WE ARE CHECKING SPECIFICITY OF A SELECTOR.
+        </p>
+    </div>
+</body>
+
+</html>

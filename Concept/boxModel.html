@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        div {
+            border: 2px solid burlywood;
+            margin: 10px;
+
+        }
+
+        .box1 {
+            padding: 40px;
+            height: 200px;
+            margin: 40px;
+            background-color: orange;
+
+            box-sizing: border-box;
+        }
+        
+        .box2 {
+            box-sizing: border-box;
+            padding: 40px;
+            height: 200px;
+            margin: 40px;
+            
+            background-color: olivedrab;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This code is for understanding Box model concept and margin collapse. </h1>
+    <div>
+        <p class="box box1">this is a first box</p>
+        <p class="box box2">this is a second box</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-10</title>
+
+</head>
+
+<body>
+    <script>
+        let adj = {
+            1: "crazy",
+            2: "Amazing",
+            3: "Fire"
+        }
+
+        let shop_name = {
+            1: "Engine",
+            2: "Foods",
+            3: "Garments"
+        }
+
+        let Obj = {
+            1: "Bros",
+            2: "limited",
+            3: "Hub"
+        }
+
+
+
+        // function rand(ob) {
+        //     //to get random object
+
+        //     let i = Math.floor((Math.random() * 3) + 1);
+        //     console.log(i);
+        //     return ob[i];
+
+        // }
+        
+        //  let r1 = rand(adj);
+        //  let r3 = rand(Obj)
+        //  let r2 = rand(shop_name);
+        //  alert("Generated name of shop: "+r1+" "+r2+" "+r3)
+        
+        let r1 = Math.floor((Math.random() *3)+1);
+        let r2 = Math.floor((Math.random() *3)+1);
+        let r3 = Math.floor((Math.random() *3)+1);
+            
+        console.log(adj[r1]+" "+shop_name[r2]+" "+ Obj[r3]);
+         
+         </script>
+</body>
+
+</html>

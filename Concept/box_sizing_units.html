@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing elements in css</title>
+    <style>
+        
+        html
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .box
+        {
+        border: 2px solid black;
+        width:  100vw;
+        height: 10vh;
+        margin: auto;
+
+        background-color: aquamarine;
+
+        }
+        .container{
+            border: 2px solid red;
+            box-sizing: border-box;
+            width: 80vh;
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 23px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: aquamarine;
+
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        this is a box
+    </div>
+
+    <div>
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, similique officiis quas, a consectetur ea exercitationem, deserunt dicta deleniti voluptate autem enim animi.
+            lorem999
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, earum assumenda? Dolorem!
+            </div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut, ratione aut deserunt hic est, magni odio voluptatem error aspernatur dolor.
+        </div>
+    </div>
+</body>
+</html>
